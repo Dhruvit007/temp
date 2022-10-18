@@ -1,0 +1,17 @@
+.team-matches-bg-color {
+  background-image: linear-gradient(to top, #1e293b, #5755a7, #a4261d, #d91c1f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.team-matches-details-container {
+  width: 80%;
+}
+.banner-image {
+  width: 100%;
+}
+.team-matches-details-title {
+  font-family: 'Bree Serif';
+  color: white;
+}
