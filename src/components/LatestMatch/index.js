@@ -1,31 +1,38 @@
 import './index.css'
 
-const LatestMatch = () => {
-  const b = 1 + 1
+const LatestMatch = props => {
+  const {latestMatchDetails} = props
+  const updatedDetails = {
+    competingTeam: latestMatchDetails.competing_team,
+    logo: latestMatchDetails.competing_team_logo,
+    date: latestMatchDetails.date,
+    firstInnings: latestMatchDetails.first_innings,
+    mom: latestMatchDetails.man_of_the_match,
+    result: latestMatchDetails.result,
+    secondInnings: latestMatchDetails.second_innings,
+    umpires: latestMatchDetails.umpires,
+    venue: latestMatchDetails.venue,
+  }
   return (
     <div className="latest-match-container">
       <div className="latest-matches-section-a">
         <div>
-          <h1>Delhi Capitals</h1>
-          <p>2020-10-20</p>
-          <p>At dubai international cricket stadium dubai</p>
-          <p>kings xi punjab won by 5 wickets</p>
+          <h1>{updatedDetails.competingTeam}</h1>
+          <p>{updatedDetails.date}</p>
+          <p>{updatedDetails.venue}</p>
+          <p>{updatedDetails.result}</p>
         </div>
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/srh-logo-img.png"
-          alt="ccc"
-          className="vsteamLogo"
-        />
+        <img src={updatedDetails.logo} alt="ccc" className="vsteamLogo" />
       </div>
       <div>
         <h3>first Innings</h3>
-        <p>Delhi capitals</p>
+        <p>{updatedDetails.firstInnings}</p>
         <h3>Second Innings</h3>
-        <p>Kings XI Punjab</p>
+        <p>{updatedDetails.secondInnings}</p>
         <h3>Man Of The Match</h3>
-        <p> S Dhawan</p>
+        <p>{updatedDetails.mom}</p>
         <h3>Umpires</h3>
-        <p>cshamshera, Rk patel</p>
+        <p>{updatedDetails.umpires}</p>
       </div>
     </div>
   )

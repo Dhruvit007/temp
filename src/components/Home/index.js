@@ -23,7 +23,6 @@ class Home extends Component {
 
   render() {
     const {teamData} = this.state
-    console.log(teamData)
     return (
       <div className="home-container">
         <div className="home-contain-container">
