@@ -1,13 +1,17 @@
 .team-matches-bg-color {
   background-image: linear-gradient(to top, #1e293b, #5755a7, #a4261d, #d91c1f);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
+
 .team-matches-details-container {
   width: 80%;
+  max-width: 900px;
 }
+
 .banner-image {
   width: 100%;
 }

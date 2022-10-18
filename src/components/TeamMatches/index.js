@@ -1,4 +1,6 @@
 import {Component} from 'react'
+import LatestMatch from '../LatestMatch'
+import MatchCard from '../MatchCard'
 import './index.css'
 
 class TeamMatches extends Component {
@@ -13,6 +15,10 @@ class TeamMatches extends Component {
             alt="iii"
           />
           <p className="team-matches-details-title">Latest Matches</p>
+          <LatestMatch />
+          <ul>
+            <MatchCard />
+          </ul>
         </div>
       </div>
     )
