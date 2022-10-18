@@ -19,3 +19,10 @@
   font-family: 'Bree Serif';
   color: white;
 }
+.match-cards-name-container {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

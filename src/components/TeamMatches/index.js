@@ -16,7 +16,12 @@ class TeamMatches extends Component {
           />
           <p className="team-matches-details-title">Latest Matches</p>
           <LatestMatch />
-          <ul>
+          <ul className="match-cards-name-container">
+            <MatchCard />
+            <MatchCard />
+            <MatchCard />
+            <MatchCard />
+            <MatchCard />
             <MatchCard />
           </ul>
         </div>

@@ -1,3 +1,25 @@
 .match-small-card-container {
   background-color: #1e293b;
+  width: 270px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .match-small-card-container {
+    width: 45%;
+  }
+}
+.opponent-logo-image {
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .opponent-logo-image {
+    width: 70px;
+    height: 70px;
+  }
 }
